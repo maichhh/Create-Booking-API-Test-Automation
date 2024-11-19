@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.5 on win32)" generated="2024-11-19T20:31:44.540211" rpa="false" schemaversion="5">
+<suite id="s1" name="Grocery" source="C:\Users\LENOVO\Documents\Study\Robot Framework API\pythonProject\grocery.robot">
+<test id="s1-t1" name="Get Auth Token Test" line="5">
+<kw name="Get Auth Token" owner="grocery_store_api_automation">
+<msg time="2024-11-19T20:31:47.777718" level="INFO">${response} = {'token': '12a7416ecc2830d'}</msg>
+<var>${response}</var>
+<status status="PASS" start="2024-11-19T20:31:46.551932" elapsed="1.225786"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-19T20:31:47.777718" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-19T20:31:46.551932" elapsed="1.225786"/>
+</test>
+<test id="s1-t2" name="Create Booking Test" line="10">
+<kw name="Create Booking" owner="grocery_store_api_automation">
+<msg time="2024-11-19T20:31:48.997830" level="INFO">Test failed with statusCode: 500</msg>
+<msg time="2024-11-19T20:31:48.997830" level="INFO">${response} = Internal Server Error</msg>
+<var>${response}</var>
+<status status="PASS" start="2024-11-19T20:31:47.777718" elapsed="1.220112"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-19T20:31:49.010846" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-19T20:31:47.777718" elapsed="1.233128"/>
+</test>
+<status status="PASS" start="2024-11-19T20:31:44.540211" elapsed="4.470635"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Grocery">Grocery</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
